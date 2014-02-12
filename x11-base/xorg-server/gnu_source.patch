@@ -1,0 +1,12 @@
+diff -Nur a/os/access.c b/os/access.c
+--- a/os/access.c	2013-07-26 05:14:33.000000000 +0000
++++ b/os/access.c	2014-02-12 08:24:57.246442400 +0000
+@@ -76,6 +76,8 @@
+  * DEALINGS IN THE SOFTWARE.
+  */
+ 
++#define _GNU_SOURCE
++
+ #ifdef HAVE_DIX_CONFIG_H
+ #include <dix-config.h>
+ #endif

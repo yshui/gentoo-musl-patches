@@ -1,0 +1,23 @@
+diff -ur a/common.c b/common.c
+--- a/common.c	2014-01-03 21:12:19.000000000 +0000
++++ b/common.c	2014-02-12 13:10:06.433681300 +0000
+@@ -30,8 +30,6 @@
+ #  define _GNU_SOURCE
+ #endif
+ 
+-#include <sys/cdefs.h>
+-
+ #ifdef __APPLE__
+ #  include <mach/mach_time.h>
+ #  include <mach/kern_return.h>
+diff -ur a/dhcpcd.c b/dhcpcd.c
+--- a/dhcpcd.c	2014-01-03 21:12:19.000000000 +0000
++++ b/dhcpcd.c	2014-02-12 13:13:20.638681300 +0000
+@@ -47,6 +47,7 @@
+ #include <syslog.h>
+ #include <unistd.h>
+ #include <time.h>
++#include <fcntl.h>
+ 
+ #include "arp.h"
+ #include "config.h"
